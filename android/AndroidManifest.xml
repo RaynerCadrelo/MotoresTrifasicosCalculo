@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest package="org.rayner.calculomotortrifasico" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.1" android:versionCode="1" android:installLocation="auto">
+<manifest package="com.raynercadrelo.calculomotortrifasico" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.2" android:versionCode="2" android:installLocation="auto">
     <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Cálculo Motor Trifásico" android:icon="@drawable/icon">
         <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density" android:name="org.qtproject.qt5.android.bindings.QtActivity" android:label="Cálculo Motor Trifásico" android:screenOrientation="unspecified" android:launchMode="singleTop">
             <intent-filter>
@@ -52,7 +52,7 @@
                 * minimal - useful for Quick Controls 2 apps, it is much faster than "full"
                 * none - useful for apps that don't use any of the above Qt modules
                 -->
-            <meta-data android:name="android.app.extract_android_style" android:value="default"/>
+            <meta-data android:name="android.app.extract_android_style" android:value="minimal"/>
             <!-- extract android style -->
         </activity>
         <!-- For adding service(s) please check: https://wiki.qt.io/AndroidServices -->

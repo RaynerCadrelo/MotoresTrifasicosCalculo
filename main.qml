@@ -45,7 +45,7 @@ ApplicationWindow {
 
             Row{
                 Text {
-                    text: qsTr("Diametro Estator: ")
+                    text: qsTr("Diámetro Estator: ")
                     width: margen
                     anchors.verticalCenter: parent.verticalCenter
                     font.pixelSize: letra
@@ -393,8 +393,9 @@ ApplicationWindow {
                 }
             }
             Row{
+                spacing: 7
                 Text {
-                    text: qsTr("Numero de espiras: ")
+                    text: qsTr("Número de espiras\n por bobina: ")
                     font.bold: true
                     anchors.verticalCenter: parent.verticalCenter
                 }
@@ -454,8 +455,7 @@ ApplicationWindow {
         labelNumeroEspiras.text= Number(espiras).toFixed(0)
         labelSeccionAlambre.text=Number(seccion).toFixed(3)+" mm2"
         labelDiametroAlambre.text= Number(diametro).toFixed(3) + " mm"
-        console.log(espirasPorFase)
-        console.log(espiras)
+//        console.log(espiras)
     }
     function factorBobinado(polos,ranuras,pasoMedio){
         if((polos==2 && ranuras==12) || (polos==4 && ranuras==24) || (polos==6 && ranuras==36) || (polos==8 && ranuras==48)){
